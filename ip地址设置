@@ -1,0 +1,10 @@
+图形界面更改ip不做赘述，使用命令行是出现了图形界面更改后无法保存的情况。
+win+R获取命令行使用管理员用户打开。
+命令行设置静态IP地址
+netsh interface ipv4 set address "网络名称" static IP地址 子网掩码 默认网关
+设置静态dns
+netsh interface ipv4 set dns "网络名称" static dns地址
+设置自动获取IP地址
+netsh interface ipv4 set address "网络名称" dhcp 
+设置自动获取dns
+netsh interface ipv4 set dns "网络名称" dhcp   
